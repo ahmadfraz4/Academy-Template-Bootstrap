@@ -1,0 +1,189 @@
+* {
+  font-family: "Barlow Condensed", sans-serif;
+  transition: 0.4s;
+}
+:root {
+  --alice-blue: #eaf3ff;
+  --Manatee: #a5a294;
+  --dark-charcoal: #333333;
+  --Cornsilk: #fff2de;
+  --Nyanza: #ecffd7;
+  --MistyRose: #ffe2e5;
+  --Lavender: #e3f0ff;
+  --Light-silver: #d8d8d8;
+  --Ultra-red: #ff7988;
+}
+.gradient_b-w {
+  background: linear-gradient(rgb(168, 166, 166), rgb(33, 32, 32));
+}
+/* Text Colors */
+.text-Manatee {
+  color: var(--Manatee);
+}
+.text-yellow {
+  color: yellow;
+}
+.text-DarkCharcol {
+  color: #333333;
+}
+/* Background Colors */
+.bg_alice-blue {
+  background-color: var(--alice-blue);
+}
+.bg-Cornsilk {
+  background-color: var(--Cornsilk);
+}
+.bg-Nyanza {
+  background-color: var(--Nyanza);
+}
+.bg-MistyRose {
+  background-color: var(--MistyRose);
+}
+.bg-Lavender {
+  background-color: var(--Lavender);
+}
+.bg-Light-silver {
+  background-color: var(--Light-silver);
+}
+.bg-Ultra-red {
+  background-color: var(--Ultra-red);
+}
+/* font-sizes */
+.fs-40 {
+  font-size: 2.5rem;
+}
+.fs-80 {
+  font-size: 5rem;
+}
+.fs-72 {
+  font-size: 4.5rem;
+}
+.fs-14 {
+  font-size: 0.875rem;
+}
+.fs-20 {
+  font-size: 1.25rem;
+}
+.fs-56 {
+  font-size: 3.5rem;
+}
+.fs-10 {
+  font-size: 0.625rem;
+}
+
+/* letter spacing */
+.ls-3 {
+  letter-spacing: 3px;
+}
+.ls-3n {
+  letter-spacing: -3px;
+}
+.ls-2n {
+  letter-spacing: -2px;
+}
+.ls-1n {
+  letter-spacing: -1px;
+}
+
+/* margin-top */
+.mt-123 {
+  margin-top: 7.6875rem;
+}
+.mt-239 {
+  margin-top: 14.9375rem;
+}
+.mt-320 {
+  margin-top: 18.75rem;
+}
+.mt-175 {
+  margin-top: 10.9375rem;
+}
+.mt-160 {
+  margin-top: 10rem;
+}
+.mt-150 {
+  margin-top: 9.375rem;
+}
+.mt-400 {
+  margin-top: 25rem;
+}
+.mt-75 {
+  margin-top: 4.6875rem !important;
+}
+/* size */
+.size-80 {
+  height: 80px;
+  width: 80px;
+}
+.size-32 {
+  height: 32px;
+  width: 32px;
+}
+.size-60 {
+  height: 60px;
+  width: 60px;
+}
+.h-43 {
+  height: 43%;
+}
+
+/* toggle */
+
+.transform-100 {
+  transform: translate(100%);
+}
+.bottom-4n {
+  bottom: -4%;
+}
+.pb-25 {
+  padding-bottom: 25rem;
+}
+.top-80 {
+  top: 80%;
+}
+.top-25 {
+  top: 25%;
+}
+
+/* displays */
+
+.vanish {
+  display: none;
+}
+.appear {
+  display: block;
+}
+.answer {
+  display: none;
+  padding: 10px 0;
+}
+.active {
+  display: block;
+}
+.fade {
+  animation: 0.4s fading linear forwards;
+}
+.profile{
+  height: 170px;
+  background-color: #dedede;
+}
+
+
+/* animation */
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+ul li a:hover {
+  color: red !important;
+}
+#slider-cards_section1 .card{
+  user-select: none !important;
+  cursor: pointer !important;
+}

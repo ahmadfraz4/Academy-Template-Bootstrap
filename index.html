@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1f2409d129.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/CSS/responsive.css">
+    <!-- JS -->
+    <script src="Assets/JS/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!--  Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <!-- title -->
+    <title>Academy_landing Page</title>
+</head>
+
+<body>
+    <div id="toggle_sidebar" class="z-2 h-100  w-100 bg-black position-fixed top-0 transform-100">
+        <button id="cross_sidebar" type="button"
+            class="position-absolute end-0 btn btn-info px-3 py-1 fw-semibold me-2 mt-2">
+            <i class="fa-solid fa-xmark"></i></button>
+        <ul class="
+        p-0 m-0 d-flex flex-column justify-content-around align-items-center">
+            <li class="list-unstyled mt-3">
+                <div class=" text-info logo fw-bold mt-5 fs-40">ACA</div>
+            </li>
+            <li class="list-unstyled mt-3"><a href="#" class="text-info text-decoration-none">Courses</a></li>
+            <li class="list-unstyled mt-3"><a href="#" class="text-info text-decoration-none">About</a></li>
+            <li class="list-unstyled mt-3"><a href="#" class="text-info text-decoration-none">Services</a></li>
+            <li class="list-unstyled mt-3"><a href="#" class="text-info text-decoration-none">Events</a></li>
+            <li class="list-unstyled mt-3"><a href="#" class="text-info text-decoration-none">Blog</a></li>
+            <button type="button" class="mt-5 btn btn-outline-info fw-semibold w-75">Contact</button>
+        </ul>
+    </div>
+    <nav
+        class="text-DarkCharcol position-sticky top-0 z-3 bg_alice-blue d-flex align-items-center justify-content-between">
+        <div class="ms-3 logo fw-bold fs-40">ACA</div>
+        <div class="nav-link col-lg-4 col-md-5 col-6 d-none_576">
+            <ul class="
+        p-0 m-0 d-flex justify-content-between align-items-center ">
+                <li class="list-unstyled"><a href="#Section2" class="text-dark text-decoration-none">Courses</a></li>
+                <li class="list-unstyled"><a href="#Section3" class="text-dark text-decoration-none">About</a></li>
+                <li class="list-unstyled"><a href="#Section4" class="text-dark text-decoration-none">Services</a></li>
+                <li class="list-unstyled"><a href="#events" class="text-dark text-decoration-none">Events</a></li>
+                <li class="list-unstyled"><a href="#section6" class="text-dark text-decoration-none">Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-info fw-semibold px-4 me-2 d-none_576">Contact</button>
+            <button id="toggleBtn" type="button" class="btn btn-outline-info fw-semibold px-4 me-2 d-none d-block_576">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div id="top-go" class="vanish position-fixed z-3 bottom-0 end-0">
+        <a href="#">
+            <button class="btn btn-outline-info fw-bold rounded-circle p-1">
+                <i class="fa-solid fs-1 fa-circle-up fa-bounce"></i>
+            </button>
+        </a>
+    </div>
+    <section id="Section1" class="bg_alice-blue pt-1">
+        <div
+            class="text-DarkCharcol container mt-123 d-flex justify-content-between align-items-center column-reverse-768  mt-2_768">
+            <section class="col-lg-5 col-md-5 col-12 mt-3_768 mt-2_768">
+                <p class="text-Manatee ls-3">Modern</p>
+                <p class="fw-bold fs-80 ls-3n text-start lh-1 fs-56_768">
+                    Education
+                    Academy
+                </p>
+                <p class="text-Manatee pe-lg-5">Education is the process of facilitating
+                    learning, or the acquisition of
+                    knowledge, skills, values,
+                    morals.</p>
+                <button type="button" class="btn btn-primary px-lg-5 py-2 px-4 mt-3 fs-14 fw-semibold">Courses</button>
+            </section>
+            <section class="col-lg-6 col-md-6 col-10">
+                <img class="img-fluid" src="Assets/images/pic_bg1.png" alt="">
+            </section>
+        </div>
+        <div class=" container mt-239 mt-2_768 d-flex flex-column align-items-center lh-1 position-relative pb-5">
+            <p class="ls-3 text-Manatee">Explore Now</p>
+            <p class="ls-2n fs-56 fs-40_768 fw-bold">
+                Catagories
+            </p>
+            <p class="col-lg-4 text-center lh-base text-Manatee mb-5">
+                Educational methods include teaching, training, storytelling, discussion and directed research.
+            </p>
+            <section
+                class="position-absolute d-flex flex-column justify-content-center align-items-center col-12 top-50 mt-5 mt-4">
+                <div class="d-flex flex-row flex-md-row justify-content-between col-lg-8 col-12 column-768">
+                    <div class="card bg_alice-blue px-4 border-0 shadow pt-3 me-lg-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div
+                                class="bg-white d-flex justify-content-center align-items-center size-80 shadow rounded-circle">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.35417 0C1.94908 0 0 1.94908 0 4.35417V18.2083H18.2083V0H4.35417ZM11.4792 10.6875H9.89583V12.2708C9.89583 12.9263 9.36383 13.4583 8.70833 13.4583C8.05283 13.4583 7.52083 12.9263 7.52083 12.2708V10.6875H5.9375C5.282 10.6875 4.75 10.1555 4.75 9.5C4.75 8.8445 5.282 8.3125 5.9375 8.3125H7.52083V6.72917C7.52083 6.07367 8.05283 5.54167 8.70833 5.54167C9.36383 5.54167 9.89583 6.07367 9.89583 6.72917V8.3125H11.4792C12.1347 8.3125 12.6667 8.8445 12.6667 9.5C12.6667 10.1555 12.1347 10.6875 11.4792 10.6875ZM0 19.7917V33.6458C0 36.0509 1.94908 38 4.35417 38H18.2083V19.7917H0ZM11.9225 30.0358C12.3864 30.4997 12.3864 31.2518 11.9225 31.7157C11.6913 31.9469 11.3873 32.0625 11.0833 32.0625C10.7793 32.0625 10.4753 31.9469 10.2442 31.7142L9.10417 30.5742L7.96417 31.7142C7.733 31.9453 7.429 32.0625 7.125 32.0625C6.821 32.0625 6.517 31.9469 6.28583 31.7142C5.82192 31.2502 5.82192 30.4982 6.28583 30.0342L7.42583 28.8942L6.28583 27.7542C5.82192 27.2903 5.82192 26.5382 6.28583 26.0743C6.74975 25.6104 7.50183 25.6104 7.96575 26.0743L9.10575 27.2143L10.2458 26.0743C10.7097 25.6104 11.4618 25.6104 11.9257 26.0743C12.3896 26.5382 12.3896 27.2903 11.9257 27.7542L10.7857 28.8942L11.9225 30.0358ZM19.7917 0H33.6458C36.0509 0 38 1.94908 38 4.35417V18.2083H19.7917V0ZM25.7292 10.2917H32.8542C33.5097 10.2917 34.0417 9.75967 34.0417 9.10417C34.0417 8.44867 33.5097 7.91667 32.8542 7.91667H25.7292C25.0737 7.91667 24.5417 8.44867 24.5417 9.10417C24.5417 9.75967 25.0737 10.2917 25.7292 10.2917ZM19.7917 38V19.7917H38V33.6458C38 36.0509 36.0509 38 33.6458 38H19.7917ZM25.3333 32.4583H32.4583C33.1138 32.4583 33.6458 31.9263 33.6458 31.2708C33.6458 30.6153 33.1138 30.0833 32.4583 30.0833H25.3333C24.6778 30.0833 24.1458 30.6153 24.1458 31.2708C24.1458 31.9263 24.6778 32.4583 25.3333 32.4583ZM32.4583 27.7083H25.3333C24.6778 27.7083 24.1458 27.1763 24.1458 26.5208C24.1458 25.8653 24.6778 25.3333 25.3333 25.3333H32.4583C33.1138 25.3333 33.6458 25.8653 33.6458 26.5208C33.6458 27.1763 33.1138 27.7083 32.4583 27.7083Z"
+                                        fill="#4A90E2" />
+                                </svg>
+                            </div>
+                            <p class="text-center mt-3 fs-20">Math</p>
+                        </div>
+                    </div>
+                    <div class="card bg-Cornsilk px-4 border-0 shadow pt-3 me-lg-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div
+                                class="bg-white d-flex justify-content-center align-items-center size-80 shadow rounded-circle">
+                                <svg width="42" height="48" viewBox="0 0 42 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M28.4554 6.7616C28.4934 6.86139 28.5364 6.95935 28.5841 7.05457C25.9782 7.65927 23.4378 8.51895 21 9.62124C18.5622 8.51895 16.0222 7.65927 13.4159 7.05457C13.4516 6.95386 13.4947 6.8559 13.545 6.7616C15.5726 2.46093 18.2806 0 21 0C23.7194 0 26.4274 2.46093 28.4554 6.7616ZM31.1043 15.5978C30.0612 14.8123 28.971 14.0505 27.834 13.3241C26.3221 12.3632 24.7863 11.4843 23.2505 10.7107C25.2121 9.90734 27.2401 9.27609 29.3112 8.82428C30.1198 11.0206 30.7201 13.2884 31.1043 15.5978ZM31.5031 8.43747C31.3969 8.44754 31.2911 8.4631 31.1867 8.48416C32.1991 11.3365 32.891 14.2918 33.2495 17.297C35.1489 18.874 36.9094 20.6112 38.513 22.488C38.8761 21.9959 39.2163 21.4919 39.5327 20.9884C42.0644 16.9688 42.6743 13.3474 41.2205 11.0742C39.7552 8.78903 36.2153 7.82819 31.5031 8.43747ZM12.6892 8.82428C14.7608 9.27426 16.7883 9.90597 18.7495 10.7107C17.2137 11.4843 15.6784 12.3632 14.166 13.3241C13.0409 14.0505 11.9388 14.8123 10.8957 15.5978C11.2799 13.2884 11.8802 11.0206 12.6892 8.82428ZM37.3408 24C36.1635 22.586 34.8906 21.2548 33.5311 20.0156C33.6245 21.3161 33.6717 22.6523 33.6717 24C33.6717 25.3477 33.6245 26.672 33.5311 27.9844C34.8906 26.7452 36.1635 25.4136 37.3408 24ZM21 26.531C22.3984 26.531 23.5321 25.398 23.5321 24C23.5321 22.602 22.3984 21.4686 21 21.4686C19.6016 21.4686 18.4683 22.602 18.4683 24C18.4683 25.398 19.6016 26.531 21 26.531ZM10.5207 18.2693C13.741 15.6674 17.2586 13.4568 21 11.6835C23.0074 12.6283 24.9498 13.7045 26.8143 14.9061C28.4275 15.9448 29.9847 17.0672 31.4798 18.2693C31.6931 20.1722 31.7989 22.0852 31.7962 24C31.7989 25.9144 31.6931 27.8278 31.4798 29.7303C29.9902 30.9401 28.4325 32.063 26.8143 33.0934C24.9498 34.2951 23.0074 35.3717 21 36.3161C18.9944 35.369 17.052 34.2928 15.1861 33.0934C13.573 32.0552 12.0157 30.9328 10.5207 29.7303C10.0985 25.9217 10.0985 22.0783 10.5207 18.2693ZM16.5928 24C16.5928 26.4335 18.5658 28.406 21 28.406C23.4337 28.405 25.4063 26.433 25.4077 24C25.4077 21.5665 23.4341 19.5936 21 19.5936C18.5658 19.5936 16.5928 21.5665 16.5928 24ZM29.3112 39.1757C27.2397 38.7253 25.2117 38.094 23.2505 37.2888C24.7863 36.5157 26.3221 35.6368 27.834 34.6755C28.9595 33.949 30.0612 33.1873 31.1043 32.4022C30.7201 34.7112 30.1198 36.9789 29.3112 39.1757ZM13.4159 40.945C13.464 41.0406 13.507 41.1381 13.545 41.2379C15.5726 45.5391 18.2806 48 21 48C23.7194 48 26.4274 45.5391 28.4554 41.2379C28.5053 41.1436 28.5483 41.0457 28.5841 40.945C25.9782 40.3407 23.4378 39.4811 21 38.3788C18.5622 39.4811 16.0222 40.3407 13.4159 40.945ZM33.2495 30.703C35.1461 29.1224 36.9067 27.3861 38.513 25.5115C38.8761 26.0155 39.2163 26.5076 39.5327 27.0235C42.0644 31.0427 42.6858 34.6521 41.2205 36.9373C39.7552 39.2224 36.2153 40.1718 31.5031 39.5625C31.4501 39.5566 31.3972 39.5477 31.3443 39.5389L31.3442 39.5389C31.2917 39.5301 31.2392 39.5213 31.1867 39.5154C32.1478 36.8672 32.8392 33.879 33.2495 30.703ZM3.48745 22.488C5.09374 20.6139 6.85433 18.8772 8.75046 17.297C9.16073 14.121 9.85261 11.1328 10.8137 8.48416C10.7596 8.47831 10.7057 8.46934 10.6517 8.46039C10.6002 8.45183 10.5488 8.44328 10.4973 8.43747C9.61451 8.32349 8.72619 8.26489 7.83605 8.26169C4.46047 8.26169 1.95168 9.24588 0.779479 11.0742C-0.685776 13.3593 -0.0644162 16.9688 2.46773 20.9884C2.78413 21.4919 3.12389 21.9845 3.48745 22.488ZM2.46773 27.0116C2.78413 26.5076 3.12389 26.0036 3.48745 25.5115C5.08183 27.3934 6.84334 29.1269 8.75046 30.6911C9.10945 33.6963 9.80132 36.6516 10.8137 39.5039C10.7089 39.525 10.6036 39.5406 10.4973 39.5506C5.7847 40.1718 2.24473 39.211 0.779479 36.9258C-0.67387 34.6521 -0.0644162 31.0312 2.46773 27.0116ZM14.166 34.6755C13.029 33.949 11.9388 33.1873 10.8957 32.4022C11.2799 34.7112 11.8802 36.9789 12.6892 39.1757C14.7603 38.7239 16.7878 38.0922 18.7495 37.2888C17.2137 36.5157 15.6784 35.6368 14.166 34.6755ZM8.46932 27.9844C7.10938 26.7452 5.83644 25.4136 4.65966 24C5.83644 22.586 7.10938 21.2548 8.46932 20.0156C8.37545 21.328 8.32874 22.6523 8.32874 24C8.32874 25.3477 8.37545 26.6834 8.46932 27.9844Z"
+                                        fill="#F5A623" />
+                                </svg>
+                            </div>
+                            <p class="text-center mt-3 fs-20">Physics</p>
+                        </div>
+                    </div>
+                    <div class="card bg-Nyanza px-4 border-0 shadow pt-3 me-lg-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div
+                                class="bg-white size-80 d-flex justify-content-center align-items-center shadow rounded-circle">
+                                <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.4714 14.7295V2.46094H16.8053C17.4906 2.46094 18.0461 1.91002 18.0461 1.23047C18.0461 0.550922 17.4906 0 16.8053 0H3.19462C2.50935 0 1.95378 0.550922 1.95378 1.23047C1.95378 1.91002 2.50935 2.46094 3.19462 2.46094H4.52853V14.7297L0.730469 23.0897H7.27304C7.50218 22.6811 7.79031 22.3017 8.13294 21.9619C9.09948 21.0034 10.3847 20.4756 11.7517 20.4756C13.1187 20.4756 14.404 21.0035 15.3706 21.9621C15.7132 22.3018 16.0012 22.6811 16.2303 23.0897H19.2695L15.4714 14.7295Z"
+                                        fill="#417505" />
+                                </svg>
+                            </div>
+                            <p class="text-center mt-3 fs-20">Chemistry</p>
+                        </div>
+                    </div>
+                    <div class="card bg-MistyRose px-4 border-0 shadow pt-3 me-lg-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div
+                                class="bg-white size-80 d-flex justify-content-center align-items-center shadow rounded-circle">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38 3.35294V8.94118H0V3.35294C0 1.50413 1.49825 0 3.33984 0H34.6602C36.5017 0 38 1.50413 38 3.35294ZM32.3594 4.47059H25.6797C25.0649 4.47059 24.5664 4.971 24.5664 5.58824C24.5664 6.20547 25.0649 6.70588 25.6797 6.70588H32.3594C32.9742 6.70588 33.4727 6.20547 33.4727 5.58824C33.4727 4.971 32.9742 4.47059 32.3594 4.47059ZM14.5469 4.47059C15.1617 4.47059 15.6602 4.971 15.6602 5.58824C15.6602 6.20547 15.1617 6.70588 14.5469 6.70588C13.932 6.70588 13.4336 6.20547 13.4336 5.58824C13.4336 4.971 13.932 4.47059 14.5469 4.47059ZM11.207 5.58824C11.207 4.971 10.7086 4.47059 10.0938 4.47059C9.47892 4.47059 8.98047 4.971 8.98047 5.58824C8.98047 6.20547 9.47892 6.70588 10.0938 6.70588C10.7086 6.70588 11.207 6.20547 11.207 5.58824ZM5.64062 4.47059C6.25545 4.47059 6.75391 4.971 6.75391 5.58824C6.75391 6.20547 6.25545 6.70588 5.64062 6.70588C5.0258 6.70588 4.52734 6.20547 4.52734 5.58824C4.52734 4.971 5.0258 4.47059 5.64062 4.47059ZM0 11.1765V34.6471C0 36.4959 1.49825 38 3.33984 38H34.6602C36.5017 38 38 36.4959 38 34.6471V11.1765H0ZM13.0157 27.0684C13.4959 27.454 13.5737 28.1573 13.1896 28.6393C12.8056 29.1213 12.1049 29.1995 11.6249 28.8138L6.05848 24.3432C5.50191 23.8964 5.50154 23.045 6.05848 22.5978L11.6249 18.1272C12.1048 17.7416 12.8055 17.8197 13.1896 18.3017C13.5737 18.7837 13.4959 19.4871 13.0157 19.8726L8.53605 23.4706L13.0157 27.0684ZM16.6834 31.7344L23.3631 16.0873C23.6053 15.5199 23.3435 14.8629 22.7784 14.6198C22.2133 14.3767 21.5588 14.6395 21.3166 15.2068L14.6369 30.8538C14.3947 31.4212 14.6565 32.0783 15.2216 32.3214C15.7869 32.5647 16.4412 32.3016 16.6834 31.7344ZM31.9415 24.3433L26.3751 28.8139C25.8958 29.199 25.195 29.1221 24.8104 28.6394C24.4263 28.1574 24.5041 27.454 24.9843 27.0685L29.464 23.4706L24.9843 19.8727C24.5041 19.4871 24.4263 18.7838 24.8104 18.3018C25.1944 17.8198 25.895 17.7417 26.3751 18.1273L31.9415 22.5979C32.4981 23.0448 32.4985 23.8961 31.9415 24.3433Z"
+                                        fill="#FF7988" />
+                                </svg>
+
+                            </div>
+                            <p class="text-center mt-3 fs-20">Information</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn px-5 py-2 fw-semibold fs-14 btn-outline-primary mt-5">Explore
+                    All</button>
+            </section>
+        </div>
+    </section>
+    <section id="Section2" class="courses mt-320 mt_812-768 container">
+        <div class="col-lg-3 mb-5">
+            <p class="text-Manatee ls-3">Courses</p>
+            <p class="fs-56 lh-1 fw-bold">Explore Our Courses</p>
+        </div>
+        <div>
+            <section class="d-flex column-768 mb-5">
+                <div class="card text-white gradient_b-w col-lg-6 col-md-6 col-12 me-md-2">
+                    <div class="card-body py-4 px-3">
+                        <button class="rounded-4 bg-Lavender border-0">
+                            Math
+                        </button>
+                        <div class="fs-40 mt-3  mt-md-5 mt-175_lg col-lg-8 col-md-12 col-10 lh-1 fw-bold ls-1n">
+                            Ipsum dolor sit amet
+                            consectetur
+                        </div>
+                        <div class="mt-5 mt-md-5 mt-130_576 d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <div class="size-32 bg-Light-silver rounded-circle"></div>
+                                <div class="ms-1 opacity-50">Donat Twerski</div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="fs-3 fw-bold me-2">$24</div>
+                                <button class="px-4 py-2 rounded-2 border-0 text-white bg-Ultra-red">Go
+                                    somewhere</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 p-md-0 me-md-2 position-relative">
+                    <div class="position-absolute z-1 mt-3 ms-3 bg-Cornsilk px-4 py-1 rounded-pill">Physice</div>
+                    <div class="img-section1 h-43 position-relative">
+                        <img src="Assets/images/students3.jpg" class="w-100 h-100" alt="...">
+                    </div>
+                    <div class="card-body p-md-0 pb-md-3 p-lg-3">
+                        <div class="fs-2 fs-17 ms-2 fw-bold lh-1">Sed do eiusmod tempor</div>
+                        <div class="d-flex mt-3 align-items-center ms-md-2  justify-content-md-start">
+                            <div class="size-32 rounded-circle bg-Light-silver me-2"></div>
+                            <div class="text-Manatee">Otha Kin</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-lg-row mt-3 flex-md-column">
+                            <div class="fs-3 fw-bold">$24</div>
+                            <button class="btn px-4 py-2 btn-outline-primary">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 p-md-0 position-relative">
+                    <div class="position-absolute z-1 mt-3 ms-3 bg-Nyanza px-4 py-1 rounded-pill">Chemistry</div>
+                    <div class="img-section1 h-43 position-relative">
+                        <img src="Assets/images/students2.jpg" class="w-100 h-100" alt="...">
+                    </div>
+                    <div class="card-body p-md-0 pb-md-3 p-lg-3">
+                        <div class="fs-2 fs-17 ms-2 fw-bold lh-1">Labore et dolore magna</div>
+                        <div class="d-flex mt-3 align-items-center ms-md-2  justify-content-md-start">
+                            <div class="size-32 rounded-circle bg-Light-silver me-2"></div>
+                            <div class="text-Manatee">Alicia Puma</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-lg-row mt-3 flex-md-column">
+                            <div class="fs-3 fw-bold">$15</div>
+                            <button class="btn px-4 py-2 btn-outline-primary">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="d-flex column-768 mt-1">
+                <div class="card col-lg-3 col-md-3 col-12 p-md-0 px-md-1 me-md-2 position-relative">
+                    <div class="position-absolute z-1 mt-3 ms-3 bg-MistyRose px-4 py-1 rounded-pill">Informatics</div>
+                    <div class="img-section1 h-43 position-relative">
+                        <img src="Assets/images/student4.jpg" class="w-100 h-100" alt="...">
+                    </div>
+                    <div class="card-body p-md-0 pb-md-3 px-md-1 p-lg-3">
+                        <div class="fs-2 fs-17 ms-2  fw-bold lh-1">Commodo consequat Buisness</div>
+                        <div class="d-flex mt-3 align-items-center ms-md-2  justify-content-md-start">
+                            <div class="size-32 rounded-circle bg-Light-silver me-2"></div>
+                            <div class="text-Manatee">Francisco Maia</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-lg-row mt-3 flex-md-column">
+                            <div class="fs-3 fw-bold">$7</div>
+                            <button class="btn px-4 py-2 btn-outline-primary">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 p-md-0 px-md-1 me-md-2 position-relative">
+                    <div class="position-absolute z-1 mt-3 ms-3 bg-info-subtle px-4 py-1 rounded-pill">Math</div>
+                    <div class="img-section1 h-43 position-relative">
+                        <img src="Assets/images/student5.jpg" class="w-100 h-100" alt="...">
+                    </div>
+                    <div class="card-body p-md-0 pb-md-3 px-md-1 p-lg-3">
+                        <div class="fs-2 fs-17 ms-2 fw-bold lh-1">Ullamco laboris nisi ut aliquip</div>
+                        <div class="d-flex mt-3 align-items-center ms-md-2  justify-content-md-start">
+                            <div class="size-32 rounded-circle bg-Light-silver me-2"></div>
+                            <div class="text-Manatee">Yolanda Barrueco</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-lg-row mt-3 flex-md-column">
+                            <div class="fs-3 fw-bold">$30</div>
+                            <button class="btn px-4 py-2 btn-outline-primary">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 p-md-0 me-md-2 position-relative">
+                    <div class="position-absolute z-1 mt-3 ms-3 bg-Nyanza px-4 py-1 rounded-pill">Chemistry</div>
+                    <div class="img-section1 h-43 position-relative">
+                        <img src="Assets/images/student6.jpg" class="w-100 h-100" alt="...">
+                    </div>
+                    <div class="card-body p-md-0 pb-md-3 p-lg-3">
+                        <div class="fs-2 fs-17 ms-2 fw-bold lh-1">Quis nostrud exercitation</div>
+                        <div class="d-flex mt-3 align-items-center ms-md-2  justify-content-md-start">
+                            <div class="size-32 rounded-circle bg-Light-silver me-2"></div>
+                            <div class="text-Manatee">Yolanda Barrueco</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-lg-row mt-3 flex-md-column">
+                            <div class="fs-3 fw-bold">$22</div>
+                            <button class="btn px-4 py-2 btn-outline-primary">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 p-md-0 position-relative">
+                    <div class="position-absolute z-1 mt-3 ms-3 bg-info-subtle px-4 py-1 rounded-pill">Math</div>
+                    <div class="img-section1 h-43 position-relative">
+                        <img src="Assets/images/student7.jpg" class="w-100 h-100" alt="...">
+                    </div>
+                    <div class="card-body p-md-0 pb-md-3 p-lg-3">
+                        <div class="fs-2 fs-17 ms-2 fw-bold lh-1">Enim ad minim veniam</div>
+                        <div class="d-flex mt-3 align-items-center ms-md-2  justify-content-md-start">
+                            <div class="size-32 rounded-circle bg-Light-silver me-2"></div>
+                            <div class="text-Manatee">Joslin Rodgers</div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-lg-row mt-3 flex-md-column">
+                            <div class="fs-3 fw-bold">$18</div>
+                            <button class="btn px-4 py-2 btn-outline-primary">Start Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <button class="btn btn-outline-primary fs-5 ms-1 mt-5 w-100">All courses</button>
+    </section>
+    <section id="Section3" class="about bg_alice-blue mt-123 text-DarkCharcol pb-25 position-relative">
+        <div class="container py-lg-5 d-flex justify-content-between align-items-center column-768">
+            <section class="col-lg-6 mt-123 position-relative">
+                <div class="img-section3 col-10 d-flex justify-content-end">
+                    <img class="img-fluid ps-5 rounded-3" src="Assets/images/pic3.jpg" alt="">
+                </div>
+                <div class="position-absolute col-5 top-0 mt-5 start_10n-sm">
+                    <div class="card overflow-hidden">
+                        <div class="card-body">
+                            <section class="d-flex align-items-center justify-content-between">
+                                <div class="size-32 p-sm-4 rounded-circle border border-5 border-primary">
+                                </div>
+                                <section class="bars w-50">
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                        <div class="progress-bar" style="width:85%;"></div>
+                                    </div>
+                                    <div class="progress mt-2" role="progressbar" aria-label="Warning example"
+                                        aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                        <div class="progress-bar bg-warning" style="width:65%;"></div>
+                                    </div>
+                                </section>
+                            </section>
+                            <section class="">
+                                <div id="chart" class="mt-5">
+                                    <script>
+                                        var options = {
+                                            chart: {
+                                                type: 'bar'
+                                            },
+                                            series: [{
+                                                name: 'sales',
+                                                data: [70, 50, 46, 60, 89, 60, 70, 91, 145]
+                                            }],
+                                            xaxis: {
+                                                categories: ['', '', "", '', '', '', '', '',
+                                                    ''
+                                                ]
+                                            },
+
+                                            dataLabels: {
+                                                enabled: false,
+
+                                            },
+                                            plotOptions: {
+                                                bar: {
+                                                    horizontal: false,
+                                                    borderRadius: 0,
+                                                    borderRadiusApplication: 'around',
+                                                    borderRadiusWhenStacked: 'last',
+                                                    columnWidth: '20%',
+                                                    barHeight: '60%',
+                                                    distributed: false,
+                                                    rangeBarOverlap: true,
+                                                    rangeBarGroupRows: false,
+
+                                                    backgroundBarColors: [],
+                                                    backgroundBarOpacity: 0,
+                                                    backgroundBarRadius: 0,
+                                                },
+                                            }
+                                        }
+                                        var chart = new ApexCharts(document.querySelector("#chart"), options);
+                                        chart.render();
+                                    </script>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-lg-5 mt-3_768">
+                <p class="ls-3 text-Manatee">About</p>
+                <p class="fs-56 lh-1 fw-bold">
+                    Success Can
+                    Be Achieved
+                </p>
+                <p class="col-lg-9 col-12 mt-4">
+                    Beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+                    directed research.
+                </p>
+                <div>
+                    <button class="btn btn-outline-primary px-lg-5 px-4">
+                        About us
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <div class="mt-175 d-flex justify-content-between flex-sm-row flex-column">
+                <section class="text-center lh-sm">
+                    <p class="fs-56 fw-bold">42 <sup>+</sup></p>
+                    <p class="fs-20">Duis Aute Irure</p>
+                    <p class="text-Manatee">Cillum dolore</p>
+                </section>
+                <section class="text-center lh-sm">
+                    <p class="fs-56 fw-bold">73<sup>%</sup></p>
+                    <p class="fs-20">Dolor in Reprehenderit</p>
+                    <p class="text-Manatee">Fugiat nulla</p>
+                </section>
+                <section class="text-center lh-sm">
+                    <p class="fs-56 fw-bold">50<sup>.0000</sup></p>
+                    <p class="fs-20">Voluptate Velit Esse</p>
+                    <p class="text-Manatee">Excepteur sint</p>
+                </section>
+            </div>
+        </div>
+        <div class="container mt-160">
+            <section class="d-flex flex-column align-items-center">
+                <p class="text-Manatee">Learn Easy</p>
+                <p class="fs-56 fw-bold"> How We Work</p>
+
+                <div class="col-lg-8 mt-5">
+                    <div class="card rounded-4 col-12 d-flex flex-sm-row">
+                        <div class="fs-72 text-center py-4 col-sm-4 bg_alice-blue fw-bold">01</div>
+                        <div class="px-4 col-8 lh-1 d-flex flex-column justify-content-center">
+                            <p class="fw-bold fs-4 mt-4">Start Learning</p>
+                            <p class="col-9">Education is the process of facilitating learning, or the acquisition.</p>
+                        </div>
+                    </div>
+                    <div class="card rounded-4 ms-md-5 col-12 d-flex flex-sm-row-reverse mt-3">
+                        <div class="fs-72 py-4 text-center col-sm-4 bg-Cornsilk fw-bold">02</div>
+                        <div class="px-4 col-8 lh-1 d-flex flex-column justify-content-center">
+                            <p class="fw-bold fs-4 mt-4">Follow the Plan</p>
+                            <p class="col-9">Knowledge, skills, values, morals, beliefs, and habits. Educational
+                                methods.</p>
+                        </div>
+                    </div>
+                    <div class="card rounded-4 col-12 d-flex flex-sm-row mt-3">
+                        <div class="fs-72 py-4 text-center col-sm-4 bg-MistyRose fw-bold">03</div>
+                        <div class="px-4 col-8 lh-1 d-flex flex-column justify-content-center ">
+                            <p class="fw-bold fs-4 mt-4">Get Successful</p>
+                            <p class="col-9">Teaching, training, storytelling, discussion and directed research.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container mb-400 mt-239 d-flex justify-content-between align-items-center column-768">
+            <section class="col-lg-6">
+                <p class="ls-3 text-Manatee">Feature</p>
+                <p class="fs-56 lh-1 fw-bold">
+                    Lead and Utilize
+                    Our Life Properly
+                </p>
+                <p class="col-lg-9 col-12 mt-4">
+                    Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+                    morals, beliefs, and habits.
+                </p>
+                <div>
+                    <button class="btn btn-outline-primary px-lg-5 px-4">
+                        All Features
+                    </button>
+                </div>
+            </section>
+            <section class="col-md-6  position-relative mt-md-0 mt-2">
+                <div class="img-section3 col-10 d-flex justify-content-end">
+                    <img class="img-fluid ps-lg-5 rounded-3" src="Assets/images/pic1.jpg" alt="">
+                </div>
+                <div class="position-absolute col-5 bottom-0 mt-5 end-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <section class="d-flex align-items-center justify-content-between">
+                                <div class="size-32 p-sm-4 rounded-circle border border-5 border-primary">
+                                </div>
+                                <section class="bars w-50">
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                        <div class="progress-bar" style="width:85%;"></div>
+                                    </div>
+                                    <div class="progress mt-2" role="progressbar" aria-label="Warning example"
+                                        aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                        <div class="progress-bar bg-warning" style="width:70%;"></div>
+                                    </div>
+                                    <div class="progress mt-2" role="progressbar" aria-label="Warning example"
+                                        aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                        <div class="progress-bar bg-warning" style="width:55%;"></div>
+                                    </div>
+                                </section>
+                            </section>
+                            <section class="col-10 mt-2">
+                                <section class="col-12">
+                                    <img class="img-fluid" src="Assets/images/Path 2.png" alt="">
+                                </section>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section
+            class="container-fluid  d-flex align-items-md-stretch align-items-center column-768 position-absolute bottom-4n bottom-20n_768 justify-content-evenly">
+            <div class="card col-lg-3 col-md-3 col-12 col-sm-8 me-md-1">
+                <div class="card-body p-4 d-flex flex-column align-items-start">
+                    <div class="p-3 d-flex justify-content-center align-items-center rounded-circle bg-Lavender">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M26.4 0H2.4C0.96 0 0 0.96 0 2.4V45.6C0 47.04 0.96 48 2.4 48H33.6C35.04 48 36 47.04 36 45.6V9.6L26.4 0ZM7.2 7.2H24C25.44 7.2 26.4 8.16 26.4 9.6C26.4 11.04 25.44 12 24 12H7.2C5.76 12 4.8 11.04 4.8 9.6C4.8 8.16 5.76 7.2 7.2 7.2ZM7.2 40.8H28.8C30 40.8 31.2 39.84 31.2 38.4C31.2 36.96 30.24 36 28.8 36H7.2C5.76 36 4.8 36.96 4.8 38.4C4.8 39.84 5.76 40.8 7.2 40.8ZM28.8 31.2H7.2C5.76 31.2 4.8 30.24 4.8 28.8C4.8 27.36 5.76 26.4 7.2 26.4H28.8C30.24 26.4 31.2 27.36 31.2 28.8C31.2 30.24 30 31.2 28.8 31.2ZM7.2 21.6H28.8C30 21.6 31.2 20.64 31.2 19.2C31.2 17.76 30.24 16.8 28.8 16.8H7.2C5.76 16.8 4.8 17.76 4.8 19.2C4.8 20.64 5.76 21.6 7.2 21.6ZM40.8 38.4L44.4 48L48 38.4H40.8ZM42 0H46.8C47.52 0 48 0.48 48 1.2V33.6H40.8V1.2C40.8 0.48 41.28 0 42 0Z"
+                                fill="#4A90E2" />
+                        </svg>
+                    </div>
+                    <div class="fs-24 col-md-6 lh-1 mt-4 fw-bold">
+                        Managing
+                        Courses
+                    </div>
+                    <div class="text-Manatee lh-1 mt-3">Good education is important for all us.</div>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-12 col-sm-8 me-md-1">
+                <div class="card-body p-4 d-flex flex-column align-items-start">
+                    <div class="p-3 d-flex justify-content-center align-items-center rounded-circle bg-Lavender">
+                        <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 12L19 0L38 12L30.875 16.56C30.875 23.28 25.65 28.56 19 28.56C12.35 28.56 7.125 23.28 7.125 16.56L0 12ZM19 43.44L24.9375 32.16C31.825 34.32 36.8125 40.56 38 48H0.2375C1.1875 40.56 6.175 34.32 13.0625 32.16L19 43.44Z"
+                                fill="#4A90E2" />
+                        </svg>
+                    </div>
+                    <div class="fs-24 col-md-8 lh-1 mt-4 fw-bold">
+                        Messaging &
+                        Notifications
+                    </div>
+                    <div class="text-Manatee lh-1 mt-3">It facilitates quality learning all through.</div>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-12 col-sm-8 me-md-1">
+                <div class="card-body p-4 d-flex flex-column align-items-start">
+                    <div class="p-3 d-flex justify-content-center align-items-center rounded-circle bg-Lavender">
+                        <svg width="38" height="48" viewBox="0 0 38 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M31.825 8.11014L28.7375 11.234C34.2 14.1176 38 19.8849 38 26.373C38 35.7447 30.6375 43.194 21.375 43.194C13.0625 43.194 6.175 36.9462 4.9875 28.776H1.1875C0.475 28.776 0 28.2954 0 27.5745V25.1715C0 24.4506 0.475 23.97 1.1875 23.97H13.0625C13.775 23.97 14.25 24.4506 14.25 25.1715V27.5745C14.25 28.2954 13.775 28.776 13.0625 28.776H9.7375C10.925 34.3029 15.675 38.388 21.375 38.388C28.025 38.388 33.25 33.1014 33.25 26.373C33.25 21.0864 29.925 16.761 25.175 15.0788L20.1875 20.1252C19.7125 20.6058 19 20.6058 18.525 20.1252L17.575 19.164L15.4375 21.3267C14.9625 21.8073 14.25 21.8073 13.775 21.3267L12.1125 19.6446C11.6375 19.164 11.6375 18.2028 12.1125 17.7222L14.25 15.7997L13.5375 14.8385C13.0625 14.3579 13.0625 13.637 13.5375 13.1564L24.9375 1.38173C25.4125 0.901126 26.125 0.901126 26.6 1.38173L27.55 2.34293L29.45 0.180225C29.925 -0.0600751 30.875 -0.0600751 31.35 0.180225L33.0125 1.86233C33.25 2.34293 33.25 3.30413 32.775 3.54443L30.875 5.70713L31.825 6.42804C32.3 6.90864 32.3 7.62954 31.825 8.11014ZM21.375 43.194H7.8375C7.3625 43.194 6.8875 43.4343 6.8875 43.9149L4.9875 46.3179C4.5125 47.0388 4.9875 48 5.9375 48H36.8125C37.7625 48 38.2375 47.0388 37.7625 46.3179L35.8625 43.9149C35.625 43.4343 35.15 43.194 34.9125 43.194H21.375Z"
+                                fill="#4A90E2" />
+                        </svg>
+                    </div>
+                    <div class="fs-24 col-md-5 lh-1 mt-4 fw-bold">
+                        Course
+                        Calendar
+                    </div>
+                    <div class="text-Manatee lh-1 mt-3">Life among people of any age group, cast.</div>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-12 col-sm-8 me-md-1">
+                <div class="card-body p-4 d-flex flex-column align-items-start">
+                    <div class="p-3 d-flex justify-content-center align-items-center rounded-circle bg-Lavender">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M35.04 21.36C42.48 19.92 48 13.44 48 5.76C48 3.84 46.56 2.4 44.64 2.4H36V1.2C36 0.48 35.52 0 34.8 0H13.2C12.48 0 12 0.48 12 1.2V2.4H3.36C1.44 2.4 0 3.84 0 5.76C0 13.44 5.52 19.92 12.96 21.36C14.4 24.96 17.76 27.84 21.6 28.56L16.8 38.4H13.2C12.48 38.4 12 38.88 12 39.6V47.04C12 47.52 12.48 48 13.2 48H34.8C35.52 48 36 47.52 36 46.8V39.36C36 38.64 35.52 38.16 34.8 38.16H31.2L26.4 28.32C30.48 27.84 33.6 24.96 35.04 21.36ZM36 7.2H43.2C42.72 11.28 39.84 14.64 36 16.08V7.2ZM4.8 7.2C5.52 11.28 8.16 14.64 12 16.08V7.2H4.8Z"
+                                fill="#4A90E2" />
+                        </svg>
+                    </div>
+                    <div class="fs-24 col-md-7 lh-1 mt-4 fw-bold">
+                        Course
+                        Management
+                    </div>
+                    <div class="text-Manatee lh-1 mt-3">Process of achieving knowledge, values.</div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="Section4" class="mt_812-768">
+        <div class="container py-lg-5  mt-239 d-flex justify-content-between align-items-center column-768">
+            <section class="col-lg-6 position-relative">
+                <div class="d-flex flex-column position-relative col-12">
+                    <div class="img-section3 col-8 h-75 d-flex justify-content-end">
+                        <img class="img-fluid ps-5 rounded-3" src="Assets/images/pic2.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 d-flex justify-content-end position-absolute start-50 top-100">
+                        <img class="img-fluid ps-5 rounded-3" src="Assets/images/pic4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="position-absolute col-5 bottom-0 mt-5 start-50">
+                    <div class="card">
+                        <div class="card-body">
+                            <section class="d-flex align-items-center justify-content-between">
+                                <div class="size-32 p-sm-4 rounded-circle border border-5 border-primary">
+                                </div>
+                                <section class="bars w-50">
+                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                        aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                        <div class="progress-bar" style="width:85%;"></div>
+                                    </div>
+                                    <div class="progress mt-2" role="progressbar" aria-label="Warning example"
+                                        aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                        <div class="progress-bar bg-warning" style="width:70%;"></div>
+                                    </div>
+
+                                </section>
+                            </section>
+                            <section class="col-10 mt-2">
+                                <section class="col-12">
+                                    <img class="img-fluid" src="Assets/images/Path 2.png" alt="">
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="col-lg-5 mt-7_768">
+                <p class="ls-3 text-Manatee">Services</p>
+                <p class="fs-56 lh-1 fw-bolder col-md-7">
+                    Successful
+                    Experience
+                </p>
+                <p class="col-lg-9 col-12 mt-4 fs-20">
+                    Proper and good education is very important for all of us. It facilitates quality learning all
+                    through the life among people.
+                </p>
+                <div>
+                    <button class="btn btn-outline-primary px-lg-5 px-4">
+                        All Service
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="container mt-400">
+            <section class="d-flex column-gap-3 column-768 mb-md-5">
+                <div class="card bg-Lavender border-0 col-md-4 col-12 ">
+                    <div class="card-body p-4 d-flex flex-column align-items-start">
+                        <div class="p-4 d-flex justify-content-center align-items-center rounded-circle bg-white">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M60.4975 41.8248H62.0896C63.0448 41.8248 63.6816 42.4633 64 43.4211V46.6139C64 47.5717 63.3632 48.2102 62.408 48.2102H50.3085L54.1294 60.0233C54.4478 61.6197 53.4925 63.2161 51.9005 63.8546C49.9901 64.4932 48.398 62.8968 48.0796 61.6197L43.6219 47.891H20.3781L15.9204 61.6197C15.602 63.2161 13.6915 64.1739 12.0995 63.8546C10.5075 63.5354 9.23383 61.6197 9.87065 60.0233L13.6915 48.2102H1.59204C0.636816 48.2102 0 47.5717 0 46.6139V43.4211C0 42.4633 0.636816 41.8248 1.59204 41.8248H3.18408V6.38546C3.18408 4.7891 4.77612 3.512 6.36816 3.512H28.3383L28.6567 2.23491C29.2935 0.638546 30.2488 0 31.8408 0C33.4328 0 34.7065 0.957819 35.0249 2.23491L35.3433 3.512H57.3134C58.9055 3.512 60.4975 4.7891 60.4975 6.38546V41.8248ZM41.393 41.8248H54.1294V35.4393H41.393V41.8248Z"
+                                    fill="#4A90E2" />
+                            </svg>
+                        </div>
+                        <div class="fs-40  lh-1 mt-4 fw-bold">
+                            Learning
+                        </div>
+                        <div class="text-Manatee lh-1 col-lg-8 col-md-10 mt-3">Proper and good education is very
+                            important for all
+                            of
+                            us.
+                        </div>
+                        <div class="mt-3">Learn More</div>
+                    </div>
+                </div>
+                <div class="card border-0 bg-Cornsilk col-md-4 col-12 mt-md-0 mt-2">
+                    <div class="card-body p-4 d-flex flex-column align-items-start">
+                        <div class="p-4 d-flex justify-content-center align-items-center rounded-circle bg-white">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M57.6 9.6H60.8C62.72 9.6 64 11.2 64 12.8V60.8C64 62.4 62.72 64 60.8 64H3.2C1.28 64 0 62.4 0 60.8V12.8C0 11.2 1.6 9.6 3.2 9.6H9.6V4.8C9.6 2.24 11.84 0 14.4 0C16.96 0 19.2 2.24 19.2 4.8V9.6H48V4.8C48 2.24 50.24 0 52.8 0C55.36 0 57.6 2.24 57.6 4.8V9.6ZM6.4 57.6H19.2V44.8H6.4V57.6ZM19.2 38.4H6.4V25.6H19.2V38.4ZM25.6 57.6H38.4V44.8H25.6V57.6ZM38.4 38.4H25.6V25.6H38.4V38.4ZM44.8 38.4H57.6V25.6H44.8V38.4Z"
+                                    fill="#4A90E2" />
+                            </svg>
+                        </div>
+                        <div class="fs-40  lh-1 mt-4 fw-bold">
+                            Schedules
+                        </div>
+                        <div class="text-Manatee lh-1 col-lg-8 col-md-10 mt-3">It facilitates quality learning all
+                            through the
+                            life
+                            among people.
+                        </div>
+                        <div class="mt-3">Get Started</div>
+                    </div>
+                </div>
+                <div class="card border-0 bg-MistyRose col-md-4 col-12 mt-md-0 mt-2">
+                    <div class="card-body p-4 d-flex flex-column align-items-start">
+                        <div class="p-4 d-flex justify-content-center align-items-center rounded-circle bg-white">
+                            <svg width="64" height="61" viewBox="0 0 64 61" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M26.88 2.56842C24.64 0.963158 22.08 0 19.2 0C12.16 0 6.4 5.77895 6.4 12.8421C6.4 19.9053 12.16 25.6842 19.2 25.6842H20.16C19.52 23.7579 19.2 21.5105 19.2 19.2632C19.2 12.5211 22.08 6.42105 26.88 2.56842ZM41.6 35.3158C50.4366 35.3158 57.6 28.1288 57.6 19.2632C57.6 10.3975 50.4366 3.21053 41.6 3.21053C32.7634 3.21053 25.6 10.3975 25.6 19.2632C25.6 28.1288 32.7634 35.3158 41.6 35.3158ZM19.2 61C19.2 48.479 29.12 38.5263 41.6 38.5263C54.08 38.5263 64 48.479 64 61H19.2ZM19.2 28.8947H21.44C22.72 31.7842 24.64 34.3526 26.88 36.2789C22.08 39.1684 18.24 43.3421 16 48.1579H0C0 37.5632 8.64 28.8947 19.2 28.8947Z"
+                                    fill="#4A90E2" />
+                            </svg>
+                        </div>
+                        <div class="fs-40  lh-1 mt-4 fw-bold">
+                            Communities
+                        </div>
+                        <div class="text-Manatee lh-1 col-lg-8 col-md-10 mt-3">Process of achieving knowledge, values,
+                            skills,
+                            beliefs.
+                        </div>
+                        <div class="mt-3">Discover Now</div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-5 d-flex justify-content-center">
+                <button class="btn btn-outline-primary px-lg-5 px-4">All Services</button>
+            </section>
+            <section
+                class="mt-175 bg-primary py-5 d-flex justify-content-md-around align-items-center align-items-md-center rounded-3 column-768">
+                <div class="text-white col-md-6">
+                    <div class="fs-56">Find Your Course</div>
+                    <div class="col-md-6">Knowledge of the world around us and changes it into something better.
+                    </div>
+                </div>
+                <div class="mt-md-0 mt-5">
+                    <button class="btn btn-danger border-0 px-lg-5 py-3 px-4 bg-Ultra-red fs-14 fw-bold">
+                        Get Started
+                    </button>
+                </div>
+            </section>
+            <section id="events" class="mt-160">
+                <section class="d-flex flex-column align-items-center">
+                    <p class="text-Manatee">Events</p>
+                    <p class="fs-56 fw-bold text-center lh-1">Outstanding<br>Events</p>
+                    <div class="col-lg-9 mt-5">
+                        <div class="card rounded-4 h-165_sm col-12 d-flex flex-sm-row align-items-center">
+                            <div class="col-sm-4 h-100 bg_alice-blue fw-bold position-relative">
+                                <div class="bg-Lavender position-absolute fs-6 rounded-4 px-4 z-2 mt-2 ms-2">Math</div>
+                                <img class="img-fluid h-100 w-100 rounded-start-3" src="Assets/images/student4.jpg"
+                                    alt="">
+                            </div>
+                            <div
+                                class="px-4 col-sm-6 mt-sm-0 mt-3 col-12 lh-1 d-flex flex-column justify-content-center">
+                                <p class="fw-bold fs-4">Occaecat Cupidatat</p>
+                                <p class="col-9">
+                                    <i class="fa-regular fa-calendar-check me-2"></i> 5 April, 2020 | 3:00pm - 7:00pm
+                                </p>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-2">
+                                <button class="btn px-md-3 px-sm-2 px-5 btn-outline-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card mt-4 rounded-4 h-165_sm col-12 d-flex flex-sm-row align-items-center">
+                            <div class="col-sm-4 h-100 bg_alice-blue fw-bold position-relative">
+                                <div class="bg-Cornsilk position-absolute fs-6 rounded-4 px-3 z-2 mt-2 ms-2">Physics
+                                </div>
+                                <img class="img-fluid h-100 w-100 rounded-start-3" src="Assets/images/student5.jpg"
+                                    alt="">
+                            </div>
+                            <div
+                                class="px-4 col-sm-6 mt-sm-0 mt-3 col-12 lh-1 d-flex flex-column justify-content-center">
+                                <p class="fw-bold fs-4">Non Proident</p>
+                                <p class="col-9">
+                                    <i class="fa-regular fa-calendar-check me-2"></i> 10 April, 2020 | 1:00pm - 5:00pm
+                                </p>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-2">
+                                <button class="btn px-md-3 px-sm-2 px-5 btn-outline-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                        <div class="card mt-4 rounded-4 h-165_sm col-12 d-flex flex-sm-row align-items-center">
+                            <div class="col-sm-4 h-100 bg_alice-blue fw-bold position-relative">
+                                <div class="bg-MistyRose position-absolute fs-6 rounded-4 px-3 z-2 mt-2 ms-2">
+                                    Information
+                                </div>
+                                <img class="img-fluid h-100 w-100 rounded-start-3" src="Assets/images/student6.jpg"
+                                    alt="">
+                            </div>
+                            <div
+                                class="px-4 col-sm-6 mt-sm-0 mt-3 col-12 lh-1 d-flex flex-column justify-content-center">
+                                <p class="fw-bold fs-4">Sunt in Culpa</p>
+                                <p class="col-9">
+                                    <i class="fa-regular fa-calendar-check me-2"></i> 17 April, 2020 | 4:00pm - 11:00pm
+                                </p>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-6 mb-2">
+                                <button class="btn px-md-3 px-sm-2 px-5 btn-outline-primary">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-5 d-flex justify-content-center">
+                    <button class="btn btn-outline-primary px-lg-5 px-4">
+                        All Events
+                    </button>
+                </section>
+            </section>
+        </div>
+    </section>
+    <section id="section5" class="py-5 bg_alice-blue mt-150 overflow-x-hidden">
+        <div class="container py-3">
+            <section id="text-section" class="mt-123 mb-5">
+                <div class="text-Manatee">Our Team</div>
+                <div class="fs-56 fw-bold">Best Teachers</div>
+            </section>
+            <section class="mt-5">
+                <div id="slider-cards_section1" class="slidingCards1 d-flex column-gap-lg-2 overflow-x-hidden">
+                    <div class="card col-md-3 col-sm-4 col-12">
+                        <div class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                            <div class="profile col-md-10 col-sm-11  col-6 position-relative rounded-circle border border-5 border-primary">
+                                <div
+                                    class="position-absolute fs-4 fw-bolder text-primary bg-white px-3 py-1 bottom-0 end-0 rounded-circle shadow">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3 fs-4 fw-bold">Jafaris Long</div>
+                            <div class="text-Manatee mt-2">Math</div>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 col-sm-4 col-12">
+                        <div class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="profile col-6 col-md-10 col-sm-11 position-relative rounded-circle border border-5 border-primary">
+                                
+                                <div
+                                    class="position-absolute fs-4 fw-bolder text-primary bg-white px-3 py-1 bottom-0 end-0 rounded-circle shadow">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3 fs-4 fw-bold">Nerte Gronw</div>
+                            <div class="text-Manatee mt-2">Physice</div>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 col-sm-4 col-12">
+                        <div class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                            <div class="profile col-6 col-md-10 col-sm-11 position-relative rounded-circle border border-5 border-primary">
+                                
+                                <div
+                                    class="position-absolute fs-4 fw-bolder text-primary bg-white px-3 py-1 bottom-0 end-0 rounded-circle shadow">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3 fs-4 fw-bold">Bernarr Dominik</div>
+                            <div class="text-Manatee mt-2">Chemistry</div>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 col-sm-4 col-12">
+                        <div class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="profile col-6 col-md-10 col-sm-11 position-relative rounded-circle border border-5 border-primary">
+                                
+                                <div
+                                    class="position-absolute fs-4 fw-bolder text-primary bg-white px-3 py-1 bottom-0 end-0 rounded-circle shadow">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3 fs-4 fw-bold">Karlien Nijhuis</div>
+                            <div class="text-Manatee mt-2">Information</div>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 col-sm-4 col-12">
+                        <div class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="profile col-6 col-md-10 col-sm-11 position-relative rounded-circle border border-5 border-primary">
+                                
+                                <div
+                                    class="position-absolute fs-4 fw-bolder text-primary bg-white px-3 py-1 bottom-0 end-0 rounded-circle shadow">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3 fs-4 fw-bold">Karlien Nijhuis</div>
+                            <div class="text-Manatee mt-2">Information</div>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 col-sm-4 col-12">
+                        <div class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="profile col-6 col-md-10 col-sm-11 position-relative rounded-circle border border-5 border-primary">
+                                
+                                <div
+                                    class="position-absolute fs-4 fw-bolder text-primary bg-white px-3 py-1 bottom-0 end-0 rounded-circle shadow">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3 fs-4 fw-bold">Karlien Nijhuis</div>
+                            <div class="text-Manatee mt-2">Information</div>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 col-sm-4 col-12">
+                        <div class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="profile col-6 col-md-10 col-sm-11 position-relative rounded-circle border border-5 border-primary">
+                                 
+                                <!--  -->
+                                <div
+                                    class="position-absolute fs-4 fw-bolder text-primary bg-white px-3 py-1 bottom-0 end-0 rounded-circle shadow">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                            </div>
+                            <div class="mt-3 fs-4 fw-bold">Karlien Nijhuis</div>
+                            <div class="text-Manatee mt-2">Information</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 d-flex justify-content-center">
+                    <div id="left-btn1" class="px-2 py-1 me-4 rounded-circle btn btn-outline-info">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div id="right-btn1" class="px-2 py-1 btn btn-outline-info rounded-circle">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </section>
+            <div class="mt-123">
+                <div class="text-Manatee">Testimonials</div>
+                <div class="fs-56 fw-bold">OUR STUDENTS</div>
+            </div>
+        </div>
+        <section class="mt-5 ms-5 overflow-x-hidden container-fluid">
+            <div id="slider-cards_section2" class="slidingCards2 overflow-x-hidden d-flex column-gap-4">
+                <div class="card col-md-4 col-sm-6 col-11">
+                    <div class="card-body py-5">
+                        <div class="text-yellow">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col-md-10 col-9 mt-4">
+                            Education gives us a knowledge of the world around us and changes it into something better.
+                            It develops in us a perspective of looking at life. It helps us build opinions.
+                        </div>
+                        <div class="pro-pics d-flex mt-4 align-items-center">
+                            <div class="size-32 bg-Light-silver rounded-circle me-2"></div>
+                            <div class="fw-semibold">Dina Glenn</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-sm-6 col-11">
+                    <div class="card-body py-5">
+                        <div class="text-yellow">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col-md-10 col-9 mt-4">
+                            It develops in us a perspective of looking at life. It helps us build opinions and have
+                            points of view on things in life. People debate over the subject of whether education.
+                        </div>
+                        <div class="pro-pics d-flex mt-4 align-items-center">
+                            <div class="size-32 bg-Light-silver rounded-circle me-2"></div>
+                            <div class="fw-semibold">Clarke Gillebert</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-sm-6 col-11">
+                    <div class="card-body py-5">
+                        <div class="text-yellow">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col-md-10 col-9 mt-4">
+                            Build opinions and have points of view on things in life. People debate over the subject of
+                            whether education is the only thing that gives knowledge.
+                        </div>
+                        <div class="pro-pics d-flex mt-4 align-items-center">
+                            <div class="size-32 bg-Light-silver rounded-circle me-2"></div>
+                            <div class="fw-semibold">Miglena Tadic</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-sm-6 col-11">
+                    <div class="card-body py-5">
+                        <div class="text-yellow">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col-md-10 col-9 mt-4">
+                            Build opinions and have points of view on things in life. People debate over the subject of
+                            whether education is the only thing that gives knowledge.
+                        </div>
+                        <div class="pro-pics d-flex mt-4 align-items-center">
+                            <div class="size-32 bg-Light-silver rounded-circle me-2"></div>
+                            <div class="fw-semibold">Miglena Tadic</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-sm-6 col-11">
+                    <div class="card-body py-5">
+                        <div class="text-yellow">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col-md-10 col-9 mt-4">
+                            Build opinions and have points of view on things in life. People debate over the subject of
+                            whether education is the only thing that gives knowledge.
+                        </div>
+                        <div class="pro-pics d-flex mt-4 align-items-center">
+                            <div class="size-32 bg-Light-silver rounded-circle me-2"></div>
+                            <div class="fw-semibold">Miglena Tadic</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-sm-6 col-11">
+                    <div class="card-body py-5">
+                        <div class="text-yellow">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col-md-10 col-9 mt-4">
+                            Build opinions and have points of view on things in life. People debate over the subject of
+                            whether education is the only thing that gives knowledge.
+                        </div>
+                        <div class="pro-pics d-flex mt-4 align-items-center">
+                            <div class="size-32 bg-Light-silver rounded-circle me-2"></div>
+                            <div class="fw-semibold">Miglena Tadic</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-sm-6 col-11">
+                    <div class="card-body py-5">
+                        <div class="text-yellow">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col-md-10 col-9 mt-4">
+                            Build opinions and have points of view on things in life. People debate over the subject of
+                            whether education is the only thing that gives knowledge.
+                        </div>
+                        <div class="pro-pics d-flex mt-4 align-items-center">
+                            <div class="size-32 bg-Light-silver rounded-circle me-2"></div>
+                            <div class="fw-semibold">Miglena Tadic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 d-flex justify-content-center">
+                <div id="left-btn2" class="px-2 py-1 me-4 rounded-circle btn btn-outline-info">
+                    <i  class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="right-btn2" class="px-2 py-1 btn btn-outline-info rounded-circle">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </section>
+        <div class="container mt-160 d-flex flex-column align-items-center">
+            <section class="d-flex flex-column align-items-center">
+                <div class="col-9 d-flex align-items-center flex-column">
+                    <div class="text-Manatee text-center">faq</div>
+                    <div class="fs-56 mt-3 fw-bold text-center lh-1">
+                        Frequently Asked
+                        Questions
+                    </div>
+                </div>
+            </section>
+            <div class="container d-flex justify-content-center mt-123">
+                <div class="card col-sm-10 col-12 col-md-8">
+                    <div class="card-body">
+                        <div class="faq  bg-white">
+                            <div class="question py-2 border-bottom">
+                                <section class="d-flex col-12 justify-content-between align-items-center">
+                                    <div class="fs-4">What is the common feature of learning?</div>
+                                    <div class="btn btn-outline-info rounded-circle py-1 px-2">
+                                        <i class="dropIcons fa-solid  fa-chevron-down "></i>
+                                    </div>
+                                </section>
+                                <div class="answer">
+                                    <p> Education gives us a knowledge of the world around us and changes it into
+                                        something
+                                        better. It develops in us a perspective of looking at life. It helps us build
+                                        opinions
+                                        and have points of view on things in life.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="question py-2 border-bottom">
+                                <section class="d-flex col-12 justify-content-between align-items-center">
+                                    <div class="fs-4">What do you mean by education?</div>
+                                    <div class="btn btn-outline-info rounded-circle py-1 px-2">
+                                        <i class="dropIcons fa-solid  fa-chevron-down "></i>
+                                    </div>
+                                </section>
+                                <div class="answer">
+                                    <p> Education gives us a knowledge of the world around us and changes it into
+                                        something
+                                        better. It develops in us a perspective of looking at life. It helps us build
+                                        opinions
+                                        and have points of view on things in life.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="question py-2">
+                                <section class="d-flex col-12 justify-content-between align-items-center">
+                                    <div class="fs-4">What are three types of education?</div>
+                                    <div class="btn btn-outline-info rounded-circle py-1 px-2">
+                                        <i class="dropIcons fa-solid  fa-chevron-down "></i>
+                                    </div>
+                                </section>
+                                <div class="answer">
+                                    <p> Education gives us a knowledge of the world around us and changes it into
+                                        something
+                                        better. It develops in us a perspective of looking at life. It helps us build
+                                        opinions
+                                        and have points of view on things in life.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section6" class="mt-123">
+        <div class="container position-relative">
+            <section>
+                <div class="text-Manatee">Our Blog</div>
+                <div class="fw-bold fs-56 ">
+                    Latest Articles
+                </div>
+            </section>
+            <section class="d-flex column-768 mt-5">
+                <div class="card text-white gradient_b-w col-lg-6 col-md-6 col-12 me-lg-2">
+                    <div class="card-body py-4 px-3">
+                        <button class="fs-20 fw-bold py-2 px-3 bg-white border-0">
+                            20 Mar, 2021
+                        </button>
+                        <div class="fs-40 mt-md-5 mt-75 col-lg-8 col-md-12 col-10 lh-1 fw-bold ls-1n">
+                            Changes it into something better
+                        </div>
+                        <div class=" d-flex justify-content-between align-items-center">
+                            <div class="text-Manatee mt-4 ">
+                                Develops in us a perspective of looking at life. It helps us build opinions and
+                                have points of view on things in life.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 p-md-0 me-lg-2 position-relative">
+                    <div class="img-section1 h-43 position-relative">
+                        <img src="Assets/images/students3.jpg" class="w-100 h-100" alt="...">
+                    </div>
+                    <div class="card-body p-md-0 pb-md-3 p-lg-3">
+                        <div class="d-flex mt-3 align-items-center ms-md-2  justify-content-md-start">
+                            <div class="fs-4 fw-bold">
+                                Develops in us a perspective of looking at life
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-lg-row mt-3 flex-md-column">
+                            <div class="text-Manatee">15 Mar, 2021</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-3 col-12 p-md-0 me-lg-2 position-relative">
+                    <div class="img-section1 h-43 position-relative">
+                        <img src="Assets/images/student4.jpg" class="w-100 h-100" alt="...">
+                    </div>
+                    <div class="card-body p-md-0 pb-md-3 p-lg-3">
+                        <div class="d-flex mt-3 align-items-center ms-md-2  justify-content-md-start">
+                            <div class="fs-4 fw-bold">
+                                Build opinions and have points of view
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between flex-lg-row mt-3 flex-md-column">
+                            <div class="text-Manatee">12 Mar, 2021</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="d-flex justify-content-center mt-5">
+                <button class="btn btn-outline-primary py-2 px-md-5">all Blogs</button>
+            </section>
+            <div class="mt-160 d-flex justify-content-between align-items-center column-768">
+                <section class="col-lg-6">
+                    <p class="ls-3 text-Manatee">Download</p>
+                    <p class="fs-56 lh-1 fw-bold">
+                        Download<br>
+                        Our App
+                    </p>
+                    <p class="col-lg-9 col-12 mt-4">
+                        World around us and changes it into something better. It develops in us a perspective of looking
+                        at life.
+                    </p>
+                    <div class="d-flex justify-content-between mt-5 col-md-8 col-10">
+                        <button
+                            class="d-flex col-lg-4 col-md-5 col-4 align-items-center justify-content-between btn btn-dark">
+                            <i class="fa-brands fs-3 fa-apple"></i>
+                            <div class="lh-1">
+                                <div class="fs-10">download on the</div>
+                                <div class="">AppStore</div>
+                            </div>
+                        </button>
+                        <button
+                            class="d-flex col-lg-4 col-md-5 col-4 align-items-center justify-content-between btn btn-dark">
+                            <i class="fa-brands text-danger fs-3 fa-google-play"></i>
+                            <div class="lh-1">
+                                <div class="fs-10">download on the</div>
+                                <div class="">AppStore</div>
+                            </div>
+                        </button>
+                    </div>
+                </section>
+                <section class="col-md-6 mt-md-0 mt-5  position-relative">
+                    <div class="img-section3 col-10 d-flex justify-content-end">
+                        <img class="img-fluid ps-lg-5 rounded-3" src="Assets/images/pic1.jpg" alt="">
+                    </div>
+                    <div class="position-absolute col-5 top-25 start-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <section class="d-flex align-items-center justify-content-between">
+                                    <div
+                                        class="size-32 p-sm-4 bg-primary rounded-circle border border-5 border-primary">
+                                    </div>
+                                    <section class="bars w-50">
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                            <div class="progress-bar" style="width:85%;"></div>
+                                        </div>
+                                        <div class="progress mt-2" role="progressbar" aria-label="Warning example"
+                                            aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                            <div class="progress-bar bg-warning" style="width:70%;"></div>
+                                        </div>
+
+                                    </section>
+                                </section>
+                                <section class="d-flex mt-1 align-items-center justify-content-between">
+                                    <div
+                                        class="size-32 p-sm-4 rounded-circle border border-5 border-warning bg-warning">
+                                    </div>
+                                    <section class="bars w-50">
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                            <div class="progress-bar" style="width:85%;"></div>
+                                        </div>
+                                        <div class="progress mt-2" role="progressbar" aria-label="Warning example"
+                                            aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                            <div class="progress-bar bg-warning" style="width:70%;"></div>
+                                        </div>
+
+                                    </section>
+                                </section>
+                                <section class="d-flex mt-1 align-items-center justify-content-between">
+                                    <div
+                                        class="size-32 p-sm-4 rounded-circle border border-5 border-success bg-success">
+                                    </div>
+                                    <section class="bars w-50">
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                            <div class="progress-bar" style="width:85%;"></div>
+                                        </div>
+                                        <div class="progress mt-2" role="progressbar" aria-label="Warning example"
+                                            aria-valuenow="75" aria-valuemin="0" style="height:7px" aria-valuemax="100">
+                                            <div class="progress-bar bg-warning" style="width:70%;"></div>
+                                        </div>
+                                    </section>
+                                </section>
+                                <section class="mt-3 d-flex justify-content-center">
+                                    <button class="btn btn-danger border-0 py-2 px-5"></button>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section
+                class="col-md-12 px-2 position-absolute mt-175 bg-primary py-5 d-flex justify-content-md-around align-items-center align-items-md-center rounded-3 column-768">
+                <div class="text-white col-md-6">
+                    <div class="fs-56">Find Your Course</div>
+                    <div class="col-md-6">Debate over the subject of whether education is the only thing that gives
+                        knowledge.
+                    </div>
+                </div>
+                <div class="mt-md-0 mt-5">
+                    <button class="btn btn-danger border-0 px-lg-5 py-3 px-4 bg-Ultra-red fs-14 fw-bold">
+                        Get Started
+                    </button>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="footer bg_alice-blue mt-320 pt-5">
+        <div class="container">
+            <section class="d-flex mt-123  mt_252-md column-768 align-items-md-start align-items-center">
+                <div class="col-md-3">
+                    <a class="fs-40 fw-bold text-DarkCharcol text-decoration-none" href="#">ACA</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="fw-bold text-Manatee ls-3 mt-2">Menu</div>
+                        <ul class="p-0 mt-3 list-unstyled">
+                            <li class="mb-3">
+                                <a class="text-dark text-decoration-none " href="#">About Us</a>
+                            </li>
+                            <li class="my-3">
+                                <a class="text-dark text-decoration-none " href="#">Pricing</a>
+                            </li>
+                            <li class="my-3">
+                                <a class="text-dark text-decoration-none " href="#">Blogs</a>
+                            </li>
+                            <li class="my-3">
+                                <a class="text-dark text-decoration-none " href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="fw-bold text-Manatee ls-3 mt-2">Services</div>
+                        <ul class="p-0 mt-3 list-unstyled">
+                            <li class="mb-3">
+                                <a class="text-dark text-decoration-none " href="#">Learning</a>
+                            </li>
+                            <li class="my-3">
+                                <a class="text-dark text-decoration-none " href="#">Schedules</a>
+                            </li>
+                            <li class="my-3">
+                                <a class="text-dark text-decoration-none " href="#">Communities</a>
+                            </li>
+                            <li class="my-3">
+                                <a class="text-dark text-decoration-none " href="#">All services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-start">
+                    <section class="d-flex col-md-7 col-lg-5 justify-content-between">
+                        <button class="py-1 px-2 border-0 rounded-circle bg-primary-subtle">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                        <button class="py-1 px-2 border-0 rounded-circle bg-primary-subtle">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="py-1 px-2 border-0 rounded-circle bg-primary-subtle">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                    </section>
+                </div>
+            </section>
+            <div class="container mt-2">
+                <div class="d-flex flex-md-row flex-column  justify-content-between align-items-center border-top py-3  fs-5">
+                    <div class="text-md-start text-center">© Copyright 2023 | Acadmy Landscape | All right reserved.</div>
+                    <div class="d-flex align-items-center">
+                        <div>Term of use</div>
+                        <div class="ms-5">privacy policy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
